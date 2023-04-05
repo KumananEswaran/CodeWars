@@ -14,9 +14,15 @@
 //Pseudocode:
 //Make a function that takes in an array
 function doubled(arr) {
-    return arr.map(element => element * 2)
+    if(arr === undefined || arr.length === 0){
+        console.log('Array is invalid')
+    }else{
+    return arr.map(element => element * 2)    
+    }
+
 }
 
 //Map through the array and multiply each element by 2 and return
 doubled([1,2,3])
 console.log([2,3,4],[4,6,8])
+console.log(doubled([]))
